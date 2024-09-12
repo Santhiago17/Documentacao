@@ -5,3 +5,4 @@
 * [Docker](./Docker/)
 * [Linux](./Linux/)
 * [Atalhos VSCode](./VSCode/)
+* [Spark e PySpark](./Spark/)
