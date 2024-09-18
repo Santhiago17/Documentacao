@@ -121,10 +121,26 @@ docker run -d -p 80:80 nginx
 docker cp meu_arquivo.txt my_container:/home/user
 ```
 
+**Docker stats: Monitora estatísticas de recursos de containers em tempo real.
+
+```bash
+docker stats
+```
+**Docker prune -a: Remove todos os recursos não utilizados (containers, imagens, redes, volumes, etc.).
+
+```bash
+docker system prune -a
+```
+
+**Criar um container Node.js com volumes:
+
+```bash
+docker run -d -p 3000:3000 -v $(pwd):/app node my-app
+```
+
 **Dicas Adicionais:**
 
 - **Dockerfile:** Um arquivo de texto que contém todos os comandos necessários para criar uma imagem Docker.
 - **Docker Compose:** Uma ferramenta para definir e executar aplicações multi-container usando um único arquivo YAML.
 - **Redes Docker:** Crie redes personalizadas para conectar seus containers.
 
-docker run  \ -v ~/Desktop/Desafio\ Final:/app \ -e AWS_ACCESS_KEY_ID=seu_access_key \ -e AWS_SECRET_ACCESS_KEY=seu_secret_key \ -e AWS_SESSION_TOKEN=seu_token \ img_data_lake_aws
